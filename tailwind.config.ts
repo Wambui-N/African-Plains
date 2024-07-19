@@ -1,3 +1,4 @@
+import { Noto_Serif_Display } from 'next/font/google';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,8 +10,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      raleway: ["Raleway", "latin"],
-      playfair: ["Playfair_Display", "latin"],
+      raleway: ['Raleway', 'latin'],
+      noto: ['Noto Serif Display', 'cyrillic'],
+      playfair: ['Playfair Display SC', 'latin'],
     },
     extend: {
       backgroundImage: {
