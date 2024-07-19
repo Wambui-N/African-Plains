@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="fixed top-0 left-0 lg:px-[8vw] sm:px-[6vw] px-[2vw] w-[100vw] flex flex-row items-end justify-between z-50">
+      <div className="fixed top-0 left-0 lg:px-[8vw] sm:px-[6vw] px-[4vw] w-[100vw] flex flex-row items-end justify-between z-50">
         <div
           className=" bg-orange shadow-sm h-[100px] w-auto flex items-end"
           onMouseEnter={mouseHover}
@@ -64,7 +64,7 @@ const Navbar = () => {
             className="w-16 h-auto text-white rotate-180"
           />
         </div>
-        <div className="flex flex-row md:gap-6 gap-2">
+        <div className="flex md:flex-row flex-col md:gap-6 gap-4">
 
         <Button onClick={selectButton} href="/Join" text="Get Involved" style="bg-orange" />
         <Button onClick={selectButton} href="/Contact" text="Contact Us" style="bg-yellow" />

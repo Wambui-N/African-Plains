@@ -9,9 +9,17 @@
 }
 
 body{
-  @apply bg-white text-brown flex justify-center items-center h-screen overflow-x-hidden;
+  @apply bg-white text-brown flex min-h-[100vh] md:overflow-y-hidden;
+}
+
+main{
+  @apply sticky md:overflow-x-auto flex flex-col md:flex-row gap-4 py-[120px] h-auto lg:h-screen lg:pl-[8vw] sm:px-[6vw] px-[4vw];
 }
 
 h1{
   @apply text-4xl font-playfair;
+}
+
+.responsive{
+
 }
