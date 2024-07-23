@@ -8,18 +8,41 @@
   }
 }
 
+.responsive{
+  @apply lg:px-[8vw] sm:px-[6vw] px-[4vw];
+ }
+
 body{
-  @apply bg-white text-brown flex min-h-[100vh] md:overflow-y-hidden;
+  @apply bg-white text-brown flex min-h-[100vh] scroll-smooth;
 }
 
 main{
-  @apply sticky md:overflow-x-auto flex flex-col md:flex-row gap-4 py-[120px] h-auto lg:h-screen lg:pl-[8vw] sm:px-[6vw] px-[4vw];
+  @apply rounded-sm
 }
 
 h1{
   @apply text-4xl font-playfair;
 }
 
-.responsive{
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width:5px;
+  height: 0px;
+  border-radius: 0.5rem;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FBF8F4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFB05C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8400;
 }
