@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Base styles injected into the base layer */
+@layer base {
+  body {
+    @apply bg-white font-raleway w-full overflow-hidden;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+/* Custom utility class */
 @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    text-wrap: balance; /* Ensure browser support for this property */
+  }
+  .responsive{
+    @apply max-w-screen-lg mx-auto;
   }
 }
