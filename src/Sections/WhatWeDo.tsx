@@ -12,7 +12,7 @@ const WhatWeDo = () => {
           history is the backbone of conservation.
         </h5>
       </div>
-      <div className="grid lg:grid-cols-3 grid-rows-3 gap-8 py-4 h-96">
+      <div className="grid grid-cols-3 gap-8 py-4 h-96">
         <ProjectFeature
           bg="bg-conservation"
           title="Conservation"
