@@ -21,6 +21,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-img': "url('/hero-img.png')",
+        'conservation': "url('/conservation.png')",
+        'communities': "url('/communities.png')",
+        'education': "url('/education.png')",
       },
       colors: {
         white: "#FBF8F4",
