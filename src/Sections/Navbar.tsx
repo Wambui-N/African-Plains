@@ -48,8 +48,8 @@ const Navbar = () => {
         </div>
         <div className="max-lg:hidden">
           <Button
-            buttonStyle="bg-yellow text-brown text-sm"
-            title="Get Involved"
+            buttonStyle="bg-yellow uppercase text-brown text-sm"
+            title="Join Us"
             href="/Get_Involved"
           />
         </div>

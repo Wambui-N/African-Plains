@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[95vh] bg-hero-img object-cover object-top">
+    <div className="w-full h-[95vh] bg-hero-img bg-no-repeat object-cover object-top">
       <div className="bg-brown/40 h-full py-24">
         <div className="responsive h-full">
           <div className="h-full lg:w-[70%] w-full flex flex-col gap-5 justify-end text-white font-bold">
@@ -20,7 +20,7 @@ const Hero = () => {
               <Button
                 buttonStyle="bg-none text-white gap-1 hover:gap-2 transition-all ease-in-out delay-50 duration-200"
                 title="Reach Out"
-                href="/Get_Involved"
+                href="/Contact"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

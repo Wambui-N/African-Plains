@@ -20,12 +20,12 @@ const Button = ({ href, buttonStyle, title, icon }: ButtonProps) => {
   return href ? (
     <Link
       href={href}
-      className={clsx(`${buttonStyle} px-4 py-2 flex flex-row items-center font-semibold text-lg cursor-pointer`)}
+      className={clsx(`${buttonStyle} inline-flex px-6 py-2 items-center font-semibold text-lg cursor-pointer`)}
     >
       {buttonContent}
     </Link>
   ) : (
-    <button className={clsx(`${buttonStyle} px-4 py-2 flex flex-row items-center font-semibold text-lg cursor-pointer`)}>
+    <button className={clsx(`${buttonStyle} inline-flex px-6 py-2 items-center font-semibold text-lg cursor-pointer`)}>
       {buttonContent}
     </button>
   );

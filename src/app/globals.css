@@ -6,7 +6,7 @@
 /* Base styles injected into the base layer */
 @layer base {
   body {
-    @apply bg-white font-raleway w-full overflow-hidden;
+    @apply bg-white font-raleway w-full overflow-x-hidden;
   }
 }
 
@@ -17,5 +17,8 @@
   }
   .responsive{
     @apply max-w-screen-lg lg:mx-auto md:mx-8 sm:mx-4;
+  }
+  .section{
+    @apply lg:px-24;
   }
 }
