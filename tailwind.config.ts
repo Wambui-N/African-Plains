@@ -19,6 +19,9 @@ const config: Config = {
       'raleway': ['Raleway', 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        'hero-img': "url('/hero-img.png')",
+      },
       colors: {
         white: "#FBF8F4",
         brown: "#391709",

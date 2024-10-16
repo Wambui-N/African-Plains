@@ -1,5 +1,9 @@
+import Hero from "@/Sections/Hero";
+
 export default function Home() {
   return(
-    <div>Home</div>
+    <div className="">
+      <Hero />
+    </div>
   )
 }

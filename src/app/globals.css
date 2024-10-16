@@ -16,6 +16,6 @@
     text-wrap: balance; /* Ensure browser support for this property */
   }
   .responsive{
-    @apply max-w-screen-lg mx-auto;
+    @apply max-w-screen-lg lg:mx-auto md:mx-8 sm:mx-4;
   }
 }

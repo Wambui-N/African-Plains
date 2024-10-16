@@ -1,22 +1,33 @@
-import clsx from 'clsx';
-import Link from 'next/link';
-import React from 'react';
+import clsx from "clsx";
+import Link from "next/link";
 
-interface ButtonProps {
+type ButtonProps = {
+  href?: string;
   buttonStyle: string;
   title: string;
-  href: string;
-}
+  icon?: JSX.Element;
+};
 
-const Button = ({ href, buttonStyle, title }: ButtonProps) => {
-  return (
-    <div>
-      <Link href={href} passHref>
-        <button className={clsx(`${buttonStyle} px-6 py-2 rounded-sm font-semibold uppercase`)}>
-          {title}
-        </button>
-      </Link>
-    </div>
+
+const Button = ({ href, buttonStyle, title, icon }: ButtonProps) => {
+  const buttonContent = (
+    <>
+      {title}
+      {icon && <span className="ml-2">{icon}</span>} {/* Add margin-right to the icon */}
+    </>
+  );
+
+  return href ? (
+    <Link
+      href={href}
+      className={clsx(`${buttonStyle} px-4 py-2 flex flex-row items-center font-semibold text-lg cursor-pointer`)}
+    >
+      {buttonContent}
+    </Link>
+  ) : (
+    <button className={clsx(`${buttonStyle} px-4 py-2 flex flex-row items-center font-semibold text-lg cursor-pointer`)}>
+      {buttonContent}
+    </button>
   );
 };
 
