@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 right-0 w-full bg-white py-4">
+    <div className="w-full bg-white py-4">
       <div className="flex flex-row justify-between items-center responsive">
         <div className="object-cover z-30">
           <Link href="/">

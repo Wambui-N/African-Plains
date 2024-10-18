@@ -16,7 +16,7 @@
     text-wrap: balance; /* Ensure browser support for this property */
   }
   .responsive{
-    @apply max-w-screen-lg lg:mx-auto md:mx-8 sm:mx-4;
+    @apply max-w-screen-lg lg:mx-auto md:px-8 sm:px-8;
   }
   .section{
     @apply lg:px-24;
