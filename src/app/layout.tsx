@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/Sections/Navbar";
+import Footer from "@/Sections/Footer";
 
 const raleway = localFont({
   src: [
@@ -81,6 +82,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

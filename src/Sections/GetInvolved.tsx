@@ -7,7 +7,7 @@ const GetInvolved = () => {
   return (
     <div className="py-12 responsive flex flex-col gap-6">
       <div className="section flex flex-col gap-6">
-        <Title title="What we do" />
+        <Title title="Get Involved" />
         <h5 className="font-bold text-2xl">
           You can channel your assistance in the following capacities. We
           welcome your involvement!
