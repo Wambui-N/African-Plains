@@ -3,7 +3,7 @@
 import Button from "@/Components/Button";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import menuAnimation from "../../Public/menuAnimation.json";
 import { motion } from "framer-motion";
@@ -19,6 +19,7 @@ const menuLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<any>(null);
+  const [isFixed, setIsFixed] = useState(false);
 
   const toggleMenu = () => {
     if (!isOpen) {
@@ -29,8 +30,28 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+
+  const handleScroll = () => {
+    // Change the threshold as needed
+    if (window.scrollY > 10) { // Adjust this value to determine when the div becomes fixed
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="w-full bg-white py-4 border-b border-brown">
+    <div className={`w-full bg-white py-4 border-b border-brown ${isFixed ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
       <div className="flex flex-row justify-between items-center responsive">
         <div className="object-cover z-30">
           <Link href="/">
