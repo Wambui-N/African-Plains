@@ -9,7 +9,7 @@ const menuLinks = [
   { path: "/", label: "Home" },
   { path: "/About", label: "About" },
   { path: "/Work", label: "What We Do" },
-  { path: "/Career", label: "Careers" },
+  { path: "/Careers", label: "Careers" },
   { path: "/Contact", label: "Contact" },
 ];
 const socialLinks = [
