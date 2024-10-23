@@ -25,7 +25,7 @@ const Button = ({ href, buttonStyle, title, icon }: ButtonProps) => {
       {buttonContent}
     </Link>
   ) : (
-    <button className={clsx(`${buttonStyle} inline-flex px-6 py-2 items-center font-semibold text-lg cursor-pointer`)}>
+    <button type='submit' className={clsx(`${buttonStyle} inline-flex px-6 py-2 items-center font-semibold text-lg cursor-pointer`)}>
       {buttonContent}
     </button>
   );
