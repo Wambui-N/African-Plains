@@ -28,7 +28,7 @@ const ContactInfo = () => {
           <Link href="href">
             <Image
               className="w-4"
-              src="/images/Facebook.svg"
+              src="/Facebook.svg"
               alt="alt"
               width={50}
               height={50}
@@ -37,7 +37,7 @@ const ContactInfo = () => {
           <Link href="href">
             <Image
               className="w-4"
-              src="/images/LinkedIn.svg"
+              src="/LinkedIn.svg"
               alt="alt"
               width={50}
               height={50}
@@ -46,7 +46,7 @@ const ContactInfo = () => {
           <Link href="href">
             <Image
               className="w-4"
-              src="/images/x.svg"
+              src="/x.svg"
               alt="alt"
               width={50}
               height={50}
