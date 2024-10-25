@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="">
           <Image
             className="text-white"
-            src="/APCT LOGO.svg"
+            src="/images/APCT LOGO.svg"
             alt="alt"
             width={200}
             height={200}

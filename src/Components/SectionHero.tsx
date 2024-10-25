@@ -20,7 +20,7 @@ const SectionHero = ({title, p, image}:SectionHeroProps) => {
     <div className="h-full w-full flex justify-center items-center">
       <Image
         className="object-cover w-full h-[60vh] rounded-2xl"
-        src={image}
+        src={`/images${image}`}
         alt="alt"
         width={500}
         height={500}
