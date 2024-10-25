@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between items-center responsive">
         <div className="object-cover z-30">
           <Link href="/">
-            <Image src="/public/images/Icon.svg" alt="logo" width={100} height={100} />
+            <Image src="public/images/Icon.svg" alt="logo" width={100} height={100} />
           </Link>
         </div>
         <div className="max-lg:hidden">
