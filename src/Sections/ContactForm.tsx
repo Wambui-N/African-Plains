@@ -1,7 +1,7 @@
 "use client"; // This tells Next.js that this is a client component
 
-import Button from "..//components/Button";
 import React, { FormEvent } from "react";
+import Button from "../components/Button";
 
 const ContactForm: React.FC = () => {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {

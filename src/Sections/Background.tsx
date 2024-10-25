@@ -1,6 +1,6 @@
-import Exposition from "..//components/Exposition";
 import Image from "next/image";
 import React from "react";
+import Exposition from "../components/Exposition";
 
 const Background = () => {
   return (
