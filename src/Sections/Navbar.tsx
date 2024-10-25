@@ -1,11 +1,11 @@
 "use client";
 
-import Button from "../../components/Button";
+import Button from "..//components/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
-import menuAnimation from "../../../Public/menuAnimation.json";
+import menuAnimation from "..//../Public/menuAnimation.json";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const menuLinks = [

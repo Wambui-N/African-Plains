@@ -1,6 +1,6 @@
-import Button from "../../components/Button";
-import Involvement from "../../components/Involvement";
-import Title from "../../components/Title";
+import Button from "..//components/Button";
+import Involvement from "..//components/Involvement";
+import Title from "..//components/Title";
 import React from "react";
 
 const GetInvolved = () => {
