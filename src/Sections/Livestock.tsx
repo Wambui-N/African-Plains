@@ -1,5 +1,5 @@
 import React from 'react'
-import Exposition from '../components/Exposition'
+import Exposition from '@/components/Exposition'
 
 const Livestock = () => {
   return (

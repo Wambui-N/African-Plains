@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHero from '../components/SectionHero'
+import SectionHero from '@/components/SectionHero'
 
 const WorkHero = () => {
   return (

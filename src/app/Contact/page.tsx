@@ -1,7 +1,6 @@
-import ContactForm from "../../sections/ContactForm";
-import ContactInfo from "../../sections/ContactInfo";
-import Map from "../../sections/Map";
-
+import ContactForm from "@/sections/ContactForm";
+import ContactInfo from "@/sections/ContactInfo";
+import Map from "@/sections/Map";
 
 export default function Contact() {
   return (

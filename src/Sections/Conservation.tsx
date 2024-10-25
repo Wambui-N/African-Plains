@@ -1,5 +1,5 @@
+import Exposition from "@/components/Exposition";
 import React from "react";
-import Exposition from "../components/Exposition";
 
 const Conservation = () => {
   return (

@@ -1,17 +1,16 @@
-
-import React from 'react'
-import Internships from '../../sections/Internships'
-import Partnerships from '../../sections/Partnerships'
-import { Donations } from '../../sections/Donations'
+import React from "react";
+import Partnerships from "@/sections/Partnerships";
+import { Donations } from "@/sections/Donations";
+import Internships from "@/sections/Internships";
 
 const page = () => {
   return (
     <div>
-        <Internships />
-        <Partnerships />
-        <Donations />
+      <Internships />
+      <Partnerships />
+      <Donations />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

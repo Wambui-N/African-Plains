@@ -1,5 +1,5 @@
-import Exposition from "../../components/Exposition";
-import SectionHero from "../../components/SectionHero";
+import Exposition from "@/components/Exposition";
+import SectionHero from "@/components/SectionHero";
 import React from "react";
 
 const page = () => {
