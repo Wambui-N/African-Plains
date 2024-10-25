@@ -88,7 +88,7 @@ const Navbar = () => {
             className="absolute left-0 top-0 flex flex-col items-center justify-around h-screen w-screen bg-yellow"
           >
             <div className="text-brown">
-              <ul>
+              <ul className="">
                 {menuLinks.map((link, index) => (
                   <li
                     className="text-brown text-center uppercase text-2xl font-medium list-none py-2"
@@ -99,9 +99,9 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div onClick={toggleMenu}>
+              <div onClick={toggleMenu} className="flex items-center justify-center">
                 <Button
-                  buttonStyle="uppercase bg-brown text-yellow text-2xl my-2 text-sm"
+                  buttonStyle="uppercase bg-brown text-yellow text-2xl my-2 font-semibold"
                   title="Join Us"
                   href="/Get_Involved"
                 />
