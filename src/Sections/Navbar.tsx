@@ -3,7 +3,7 @@
 import Button from "@/Components/Button";
 import Image from "next/image";
 import Link from "next/link";
-import icon from '../../public/Icon.svg'
+import icon from '../public/Icon.svg'
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import menuAnimation from "../../Public/menuAnimation.json";
