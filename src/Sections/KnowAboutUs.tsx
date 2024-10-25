@@ -7,7 +7,7 @@ const KnowAboutUs = () => {
   return (
     <div className="md:py-12 py-6 responsive">
       <div className="section grid md:grid-cols-2 gap-6">
-        <div className="flex items-center text-brown">
+        <div className="w-full flex items-center text-brown">
           <div className="flex flex-col gap-6">
             <Title title="Know about us" />
             <p>
