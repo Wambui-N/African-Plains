@@ -1,4 +1,4 @@
-import Exposition from "@/components/Exposition";
+import Exposition from "../../components/Exposition";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +6,8 @@ const Background = () => {
   return (
     <div className="responsive">
       <div className="section">
-        <Exposition title='Background'
+        <Exposition
+          title="Background"
           children={
             <div className="flex flex-col gap-3">
               <p className="">
@@ -27,7 +28,14 @@ const Background = () => {
                 This is only possible when the communities derive value from the
                 wildlife and their livelihoods are enhanced by the association.
               </p>
-              <Image className="py-4 w-full rounded-2xl" src="/Background.png" alt="alt" quality={100} width={500} height={500} />
+              <Image
+                className="py-4 w-full rounded-2xl"
+                src="/Background.png"
+                alt="alt"
+                quality={100}
+                width={500}
+                height={500}
+              />
             </div>
           }
         />

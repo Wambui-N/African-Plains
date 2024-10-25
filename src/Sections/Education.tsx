@@ -1,4 +1,4 @@
-import Exposition from "@/components/Exposition";
+import Exposition from "../../components/Exposition";
 import React from "react";
 
 const Education = () => {

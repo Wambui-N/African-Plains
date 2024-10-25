@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/Button";
+import Button from "../../components/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -24,7 +24,6 @@ const Footer = () => {
   const scrollToTop = () => {
     const duration = 1000; // Duration in ms (1000ms = 1 second)
     const easeOutExpo = (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t));
-
 
     const start = window.scrollY;
     const startTime = performance.now();
@@ -58,10 +57,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-row flex-between gap-10">
           <ul className="flex flex-col">
-            <li
-              className="cursor-pointer py-2 font-bold"
-              onClick={scrollToTop}
-            >
+            <li className="cursor-pointer py-2 font-bold" onClick={scrollToTop}>
               Back to the top
             </li>
             {menuLinks.map((link, index) => (

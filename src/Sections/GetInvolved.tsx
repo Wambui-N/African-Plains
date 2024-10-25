@@ -1,6 +1,6 @@
-import Button from "@/components/Button";
-import Involvement from "@/components/Involvement";
-import Title from "@/components/Title";
+import Button from "../../components/Button";
+import Involvement from "../../components/Involvement";
+import Title from "../../components/Title";
 import React from "react";
 
 const GetInvolved = () => {
@@ -31,27 +31,27 @@ const GetInvolved = () => {
         />
       </div>
       <div className="inline-flex justify-end">
-      <Button
-                buttonStyle="bg-none text-Brown gap-1 hover:gap-2 transition-all ease-in-out delay-50 duration-200"
-                title="Reach Out"
-                href="/Get_Involved"
-                icon={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                }
+        <Button
+          buttonStyle="bg-none text-Brown gap-1 hover:gap-2 transition-all ease-in-out delay-50 duration-200"
+          title="Reach Out"
+          href="/Get_Involved"
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
               />
+            </svg>
+          }
+        />
       </div>
     </div>
   );

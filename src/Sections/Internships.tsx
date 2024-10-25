@@ -1,4 +1,4 @@
-import Exposition from "@/components/Exposition";
+import Exposition from "../../components/Exposition";
 import React from "react";
 
 const Internships = () => {
@@ -28,7 +28,9 @@ const Internships = () => {
                   <p className="basis-3/5">25 USD per week</p>
                 </div>
                 <div className="flex flex-row justify-between">
-                  <p className="font-bold basis-2/5">Stationery and Equipment</p>
+                  <p className="font-bold basis-2/5">
+                    Stationery and Equipment
+                  </p>
                   <p className="basis-3/5">10 USD per day</p>
                 </div>
                 <div className="flex flex-row justify-between">

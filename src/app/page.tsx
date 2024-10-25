@@ -1,15 +1,15 @@
-import GetInvolved from "@/sections/GetInvolved";
-import Hero from "@/sections/Hero";
-import KnowAboutUs from "@/sections/KnowAboutUs";
-import WhatWeDo from "@/sections/WhatWeDo";
+import GetInvolved from "../../sections/GetInvolved";
+import Hero from "../../sections/Hero";
+import KnowAboutUs from "../../sections/KnowAboutUs";
+import WhatWeDo from "../../sections/WhatWeDo";
 
 export default function Home() {
-  return(
+  return (
     <div className="">
       <Hero />
       <KnowAboutUs />
       <WhatWeDo />
       <GetInvolved />
     </div>
-  )
+  );
 }
