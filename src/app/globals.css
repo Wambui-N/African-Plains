@@ -8,6 +8,9 @@
   body {
     @apply bg-white text-brown font-raleway w-full overflow-x-hidden;
   }
+  p {
+    @apply leading-relaxed;
+  }
 }
 
 /* Custom utility class */
