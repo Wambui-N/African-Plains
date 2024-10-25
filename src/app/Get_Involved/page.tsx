@@ -1,7 +1,7 @@
 import React from "react";
-import Partnerships from "@/sections/Partnerships";
-import { Donations } from "@/sections/Donations";
-import Internships from "@/sections/Internships";
+import {Partnerships} from "@/sections";
+import { Donations } from "@/sections";
+import {Internships} from "@/sections";
 
 const page = () => {
   return (

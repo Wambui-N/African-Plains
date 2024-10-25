@@ -1,8 +1,8 @@
-import Community from "@/sections/Community";
-import Conservation from "@/sections/Conservation";
-import Education from "@/sections/Education";
-import Livestock from "@/sections/Livestock";
-import WorkHero from "@/sections/WorkHero";
+import {Community} from "@/sections";
+import {Conservation} from "@/sections";
+import {Education} from "@/sections";
+import {Livestock} from "@/sections";
+import {WorkHero} from "@/sections";
 
 export default function Work() {
   return (
