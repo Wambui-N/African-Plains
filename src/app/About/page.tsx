@@ -1,7 +1,7 @@
-import Background from "@/Sections/Background";
-import Mission from "@/Sections/Mission";
-import Trust from "@/Sections/Trust";
-import Vision from "@/Sections/Vision";
+import Background from "@/sections/Background";
+import Mission from "@/sections/Mission";
+import Trust from "@/sections/Trust";
+import Vision from "@/sections/Vision";
 
 export default function About() {
     return(

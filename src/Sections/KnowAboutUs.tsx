@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Title from "@/Components/Title";
-import Button from "@/Components/Button";
+import Title from "@/components/Title";
+import Button from "@/components/Button";
 
 const KnowAboutUs = () => {
   return (

@@ -1,5 +1,5 @@
-import ProjectFeature from "@/Components/ProjectFeature";
-import Title from "@/Components/Title";
+import ProjectFeature from "@/components/ProjectFeature";
+import Title from "@/components/Title";
 import React from "react";
 
 const WhatWeDo = () => {

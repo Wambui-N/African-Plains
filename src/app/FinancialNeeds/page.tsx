@@ -1,4 +1,4 @@
-import FinancialTable from "@/Components/FinancialTable";
+import FinancialTable from "@/components/FinancialTable";
 
 const financialData = [
   {

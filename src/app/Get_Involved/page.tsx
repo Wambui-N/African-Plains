@@ -1,6 +1,6 @@
-import { Donations } from '@/Sections/Donations'
-import Internships from '@/Sections/Internships'
-import Partnerships from '@/Sections/Partnerships'
+import { Donations } from '@/sections/Donations'
+import Internships from '@/sections/Internships'
+import Partnerships from '@/sections/Partnerships'
 import React from 'react'
 
 const page = () => {

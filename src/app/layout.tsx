@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/Sections/Navbar";
-import Footer from "@/Sections/Footer";
+import Navbar from "@/sections/Navbar";
+import Footer from "@/sections/Footer";
 
 const raleway = localFont({
   src: [

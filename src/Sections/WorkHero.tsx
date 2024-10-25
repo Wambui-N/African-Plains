@@ -1,4 +1,4 @@
-import SectionHero from '@/Components/SectionHero'
+import SectionHero from '@/components/SectionHero'
 import React from 'react'
 
 const WorkHero = () => {
