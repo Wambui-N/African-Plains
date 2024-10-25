@@ -126,7 +126,7 @@ export default function FinancialNeeds() {
   return (
     <div className="max-w-screen-lg mx-auto p-6">
       <h1 className="text-3xl font-bold text-center text-brown mb-8">
-        Our Financial Needs
+        Donations Guide
       </h1>
       {financialData.map((section, index) => (
         <FinancialTable
