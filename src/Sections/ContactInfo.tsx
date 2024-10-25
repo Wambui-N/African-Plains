@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactInfo = () => {
   return (
-    <div className="responsive grid grid-cols-2 gap-12 py-16">
+    <div className="responsive grid md:grid-cols-2 gap-12 py-16">
       <div className="flex flex-col justify-center gap-2">
         <p className="font-semibold text-3xl">We'd love to hear from you</p>
         <p>

@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="responsive section py-6">
       <form className="flex flex-col gap-12" onSubmit={handleSubmit}>
-        <div className="flex flex-row w-full justify-between gap-12">
+        <div className="flex flex-col md:flex-row w-full justify-between gap-12">
           <div className="flex flex-col gap-2 w-full">
             <label className="text-xs capitalize" htmlFor="first name">
               First Name
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row w-full justify-between gap-12">
+        <div className="flex md:flex-row flex-col w-full justify-between gap-12">
           <div className="flex flex-col gap-2 w-full">
             <label className="text-xs capitalize" htmlFor="email">
               Email
