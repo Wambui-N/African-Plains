@@ -3,6 +3,7 @@
 import Button from "@/Components/Button";
 import Image from "next/image";
 import Link from "next/link";
+import icon from '../../public/Icon.svg'
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import menuAnimation from "../../Public/menuAnimation.json";
@@ -54,7 +55,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between items-center responsive">
         <div className="object-cover z-30">
           <Link href="/">
-            <Image src="/Icon.svg" alt="logo" width={100} height={100} />
+            <Image src={icon} alt="logo" width={100} height={100} />
           </Link>
         </div>
         <div className="max-lg:hidden">
