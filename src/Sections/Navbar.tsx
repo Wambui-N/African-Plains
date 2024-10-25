@@ -6,8 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import menuAnimation from "../../Public/menuAnimation.json";
-import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const menuLinks = [
   { path: "/", label: "Home" },
@@ -19,7 +18,7 @@ const menuLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<any>(null);
-  const [isFixed, setIsFixed] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   const toggleMenu = () => {
     if (!isOpen) {
@@ -30,28 +29,24 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const { scrollY } = useScroll();
 
-  const handleScroll = () => {
-    // Change the threshold as needed
-    if (window.scrollY > 10) { // Adjust this value to determine when the div becomes fixed
-      setIsFixed(true);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 200) {
+      setHidden(true);
     } else {
-      setIsFixed(false);
+      setHidden(false);
     }
-  };
-
-  useEffect(() => {
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup function to remove the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  });
 
   return (
-    <div className={`w-full bg-white py-4 border-b border-brown ${isFixed ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
+    <motion.div
+      variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className={`sticky w-full bg-white py-4 shadow top-0 z-50`}
+    >
       <div className="flex flex-row justify-between items-center responsive">
         <div className="object-cover z-30">
           <Link href="/">
@@ -115,7 +110,7 @@ const Navbar = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
