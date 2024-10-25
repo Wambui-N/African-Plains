@@ -46,7 +46,7 @@ const Footer = () => {
 
   return (
     <div className="bg-brown text-white text-sm">
-      <div className="responsive py-24 flex flex-row items-center justify-between">
+      <div className="responsive py-24 flex md:flex-row flex-col md:gap-0 gap-12 items-center justify-between">
         <div className="">
           <Image
             className="text-white"
@@ -56,7 +56,7 @@ const Footer = () => {
             height={200}
           />
         </div>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row flex-between gap-10">
           <ul className="flex flex-col">
             <li
               className="cursor-pointer py-2 font-bold"

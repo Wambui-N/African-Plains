@@ -13,7 +13,7 @@ const GetInvolved = () => {
           welcome your involvement!
         </h5>
       </div>
-      <div className="grid grid-cols-3 gap-8 py-4 h-64">
+      <div className="grid md:grid-cols-3 gap-8 py-4 md:h-64">
         <Involvement
           style="bg-yellow"
           title="Donations"

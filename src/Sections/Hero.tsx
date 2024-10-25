@@ -3,11 +3,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[85vh] bg-hero-img bg-no-repeat object-cover object-top">
+    <div className="w-full h-[85vh] bg-hero-img bg-no-repeat bg-cover bg-[position:70%_center] object-cover object-top">
       <div className="bg-brown/40 h-full py-24">
         <div className="responsive h-full">
           <div className="h-full lg:w-[70%] w-full flex flex-col gap-5 justify-end text-white font-bold">
-            <h1 className="text-3xl">
+            <h1 className="text-3xl max-sm:font-bold">
               Welcome to African Plains Conservation Trust &#x2010; Preserving
               Nature, Empowering Communities
             </h1>

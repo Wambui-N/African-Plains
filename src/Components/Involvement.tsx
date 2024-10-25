@@ -12,7 +12,7 @@ const Involvement = ({ style, title, p }: ProjectsFeatureProps) => {
     <div
       className={`text-brown ${style} object-cover rounded-2xl bg-no-repeat h-full`}
     >
-      <div className="rounded-2xl py-12 px-6 flex flex-col justify-between h-full">
+      <div className="rounded-2xl py-12 px-6 flex flex-col gap-2 justify-between h-full">
         <h6 className="text-xl font-bold uppercase">{title}</h6>
         <div className="flex flex-col gap-6 font-semibold">
           <p className="text-sm">{p}</p>

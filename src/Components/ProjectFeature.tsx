@@ -12,8 +12,8 @@ const ProjectFeature = ({ bg, title, p }: ProjectsFeatureProps) => {
     <div
       className={`text-white ${bg} object-cover rounded-2xl bg-no-repeat h-full`}
     >
-      <div className="bg-brown/50 rounded-2xl py-12 px-6 flex flex-col justify-between h-full">
-        <h6 className="text-xl font-bold uppercase">{title}</h6>
+      <div className="md:bg-brown/50 bg-brown/65 rounded-2xl md:py-12 py-6 px-6 flex flex-col justify-between h-full">
+        <h6 className="text-xl font-bold uppercase py-2">{title}</h6>
         <div className="flex flex-col gap-6">
           <p className="text-sm font-semibold">{p}</p>
           <div className="self-start">
