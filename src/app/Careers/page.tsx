@@ -1,4 +1,4 @@
-import Exposition from "@/components/Exposition";
+import {Exposition} from "@/components";
 import SectionHero from "@/components/SectionHero";
 import React from "react";
 
